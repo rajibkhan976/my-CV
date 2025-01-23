@@ -1,4 +1,5 @@
 import { Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Navbar = () => {
 	return (
@@ -68,31 +69,37 @@ const Navbar = () => {
 						<div className='hidden sm:ml-6 sm:block'>
 							<div className='flex space-x-4'>
 								{/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-								<a
-									href='#'
-									className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'
+								<Link
+									href='/'
+									className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 									aria-current='page'
 								>
-									Dashboard
-								</a>
-								<a
-									href='#'
+									Home
+								</Link>
+								<Link
+									href='/about'
+									className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+								>
+									About
+								</Link>
+								<Link
+									href='/portfolio'
 									className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 								>
-									Team
-								</a>
-								<a
-									href='#'
+									Portfolio
+								</Link>
+								<Link
+									href='/resume'
 									className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 								>
-									Projects
-								</a>
-								<a
-									href='#'
+									Resume
+								</Link>
+								<Link
+									href='/contact'
 									className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 								>
-									Calendar
-								</a>
+									Contact
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -139,53 +146,6 @@ const Navbar = () => {
 									/>
 								</button>
 							</div>
-
-							{/* <!--
-            Dropdown menu, show/hide based on menu state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          --> */}
-							{/* <div
-								className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden'
-								role='menu'
-								aria-orientation='vertical'
-								aria-labelledby='user-menu-button'
-								tabIndex={-1}
-							> */}
-							{/* <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" --> */}
-							{/* <a
-									href='#'
-									className='block px-4 py-2 text-sm text-gray-700'
-									role='menuitem'
-									tabIndex={-1}
-									id='user-menu-item-0'
-								>
-									Your Profile
-								</a>
-								<a
-									href='#'
-									className='block px-4 py-2 text-sm text-gray-700'
-									role='menuitem'
-									tabIndex={-1}
-									id='user-menu-item-1'
-								>
-									Settings
-								</a>
-								<a
-									href='#'
-									className='block px-4 py-2 text-sm text-gray-700'
-									role='menuitem'
-									tabIndex={-1}
-									id='user-menu-item-2'
-								>
-									Sign out
-								</a>
-							</div> */}
 						</div>
 					</div>
 				</div>
@@ -198,31 +158,37 @@ const Navbar = () => {
 			>
 				<div className='space-y-1 px-2 pt-2 pb-3'>
 					{/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-					<a
-						href='#'
-						className='block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white'
+					<Link
+						href='/'
+						className='block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 						aria-current='page'
 					>
-						Dashboard
-					</a>
-					<a
-						href='#'
+						Home
+					</Link>
+					<Link
+						href='/about'
 						className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 					>
-						Team
-					</a>
-					<a
-						href='#'
+						About
+					</Link>
+					<Link
+						href='/resume'
 						className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 					>
-						Projects
-					</a>
-					<a
-						href='#'
+						Resume
+					</Link>
+					<Link
+						href='/portfolio'
 						className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
 					>
-						Calendar
-					</a>
+						Portfolio
+					</Link>
+					<Link
+						href='/contact'
+						className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+					>
+						Contact
+					</Link>
 				</div>
 			</div>
 		</nav>
