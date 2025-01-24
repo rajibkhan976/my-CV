@@ -7,9 +7,9 @@ const Resume = () => {
 					Rajib Hossain Khan
 				</h1>
 				<div className='w-full text-black text-md'>
-					<span className='px-2'>rajibkhan976@gmail.com</span>
+					<span className='px-2'>Email: rajibkhan976@gmail.com</span>
 					<span className='px-2'>|</span>
-					<span className='px-2'>0480417262</span>
+					<span className='px-2'>Mobile: +61480417262</span>
 					<span className='px-2'>|</span>
 					<span className='px-2'>23 Bullara Road, Craigie, WA 6025</span>
 				</div>
@@ -233,7 +233,7 @@ const Resume = () => {
 				<div className='text-black text-justify flex justify-between py-1'>
 					<div className='flex flex-col w-9/12'>
 						<div className='pb-1'>
-							<span className='font-semibold'> Frontend Developer;&nbsp;</span>
+							<span className='font-semibold'>Frontend Developer;&nbsp;</span>
 							JustGo Technologies Ltd, Bangla Motor, Dhaka, Bangladesh
 						</div>
 						<div className='pb-1'>
@@ -249,12 +249,159 @@ const Resume = () => {
 						</ul>
 						<div className='font-semibold pb-1'>Key achievements:</div>
 						<ul className='list-disc list-inside m-2 text-black pb-1'>
-							<li>Integrated Stripe</li>
+							<li>Integrated Stripe API</li>
 							<li>Designed custom reusable Calendar component</li>
 						</ul>
 					</div>
 					<div className='font-semibold w-2/12'>June, 2022 – May, 2023</div>
 				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>Software Engineer;&nbsp;</span>
+							Gigalogy, Mirpur DOHS, Dhaka, Bangladesh
+						</div>
+						<div className='pb-1'>
+							Development of company website & AI platform by using Vue.js,
+							Vuetify, Python, Flask, Node.js, PostgreSQL, Git, Redis,
+							JavaScript, HTML5, CSS3, Cypress, Docker, OOP, AWS
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>
+								Work on Gigalogy AI platform & company website for a Japanese
+								client
+							</li>
+							<li>Implementation of new features</li>
+							<li>API creation and modification</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Implemented internationalization/localization</li>
+							<li>Customized editor.js</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>January, 2022 – July, 2022</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>
+								Creative Developer (JavaScript);&nbsp;
+							</span>
+							Service Engine BPO, 8 Abbas Garden, Dhaka, Bangladesh
+						</div>
+						<div className='pb-1'>
+							Development of animated web banners by using GSAP, JavaScript,
+							jQuery, HTML5, CSS3, Git
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Develop marketing solutions for Flashtalking</li>
+							<li>Creating interactive web banners</li>
+							<li>Implementing animations with GSAP</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Worked as a mentor</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>
+						March, 2021 – December, 2021
+					</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>Software Engineer;&nbsp;</span>
+							MESOLshare Ltd., Dhaka, Bangladesh
+						</div>
+						<div className='pb-1'>
+							Development of company software by using React, Material UI,
+							Redux, Angular, JavaScript, HTML5, CSS3, Git, Bootstrap, Python,
+							Django, PostgreSQL
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Work on in-house software SOLGrid 2 dashboard</li>
+							<li>Converting Figma designs to UI</li>
+							<li>API integration</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Implemented Payment, SolBox & Customer module</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>
+						October, 2020 – March, 2021
+					</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>Software Developer;&nbsp;</span>
+							Visma Labs AB, Växjö, Sweden
+						</div>
+						<div className='pb-1'>
+							Development of HRPlus8 software by using React, Redux, React
+							Virtualized, Bootstrap, ASP.NET Web API, C#, Microsoft SQL, Git,
+							RabbitMQ, SCSS, Gulp, Webpack, Babel, Docker, OOP, Azure, Java,
+							Spring, Maven
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Work on HRPlus8 software</li>
+							<li>Development of delegation and employment module</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>
+								Successfully completed assigned tasks & proposed further
+								enhancements
+							</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>
+						September, 2019 – June, 2020
+					</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>
+								Junior Software Engineer & Intern;&nbsp;
+							</span>
+							bGlobal Interactive Ltd., Dhaka, Bangladesh
+						</div>
+						<div className='pb-1'>
+							Development & maintenance of INGRAM MICRO websites by using HTML5,
+							CSS3, jQuery, JavaScript, PHP, Laravel, WordPress, Git, MySQL
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Develop and maintain Ingram Micro websites</li>
+							<li>Customization of existing features</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Customized WordPress plugin</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>August, 2016 – March, 2017</div>
+				</div>
+			</div>
+			<div className='w-full px-8'>
+				<div className='text-black font-bold text-xl mb-2 uppercase border-b-2 border-gray-950'>
+					Referees
+				</div>
+				<div className='text-black text-justify'>Available upon request</div>
+				<br />
+				<br />
 			</div>
 		</div>
 	);
