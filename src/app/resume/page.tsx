@@ -124,7 +124,7 @@ const Resume = () => {
 					Employment history
 				</div>
 				<div className='text-black text-justify flex justify-between pb-1'>
-					<div className='flex flex-col'>
+					<div className='flex flex-col w-9/12'>
 						<div className='pb-1'>
 							<span className='font-semibold'>Admin Assistant;&nbsp;</span>
 							Australian Islamic College, Henley Brook, Perth, WA 6055
@@ -141,10 +141,10 @@ const Resume = () => {
 							<li>Supporting academic staff with IT tools</li>
 						</ul>
 					</div>
-					<div className='font-semibold'>January, 2025 - Current</div>
+					<div className='font-semibold w-2/12'>January, 2025 - Current</div>
 				</div>
 				<div className='text-black text-justify flex justify-between pb-1'>
-					<div className='flex flex-col pb-1'>
+					<div className='flex flex-col pb-1 w-9/12'>
 						<div className=' pb-1'>
 							<span className='font-semibold'>
 								Parcel Post Officer (Christmas Casual);&nbsp;
@@ -160,11 +160,13 @@ const Resume = () => {
 							<li>Parcel processing & sorting</li>
 						</ul>
 					</div>
-					<div className='font-semibold'>October, 2024 - January, 2025</div>
+					<div className='font-semibold w-2/12'>
+						October, 2024 - January, 2025
+					</div>
 				</div>
 
 				<div className='text-black text-justify flex justify-between py-1'>
-					<div className='flex flex-col'>
+					<div className='flex flex-col w-9/12'>
 						<div className='pb-1'>
 							<span className='font-semibold'>
 								{" "}
@@ -187,10 +189,71 @@ const Resume = () => {
 						</ul>
 						<div className='font-semibold pb-1'>Key achievements:</div>
 						<ul className='list-disc list-inside m-2 text-black pb-1'>
-							<li>Behind-the-Scenes Wonder Award - Januar, 2024</li>
+							<li>Behind-the-Scenes Wonder Award - January, 2024</li>
 						</ul>
 					</div>
-					<div className='font-semibold'>July, 2023 - July, 2024</div>
+					<div className='font-semibold w-2/12'>July, 2023 - July, 2024</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'>
+								{" "}
+								Software Developer (Freelance project);&nbsp;
+							</span>
+							Alphabyte Inc., 3-1-36 Aoyama Marutake Building, 6th Floor, Minami
+							Aoyama, Minato-ku, Tokyo 107-0062, Japan
+						</div>
+						<div className='pb-1'>
+							Development of product page by using Next.js, TypeScript, React
+							Query, Node.js, NestJS, PostgreSQL, Git, JavaScript, TypeScript,
+							HTML5, CSS3, Tailwind CSS, OOP, Docker
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Work on Retreat portal</li>
+							<li>
+								Development of product page with purchase options for the
+								attendees
+							</li>
+							<li>Stripe API integration</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>
+								Completion of the product page development in a very short time
+								that made the client super happy
+							</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>February 2024</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col w-9/12'>
+						<div className='pb-1'>
+							<span className='font-semibold'> Frontend Developer;&nbsp;</span>
+							JustGo Technologies Ltd, Bangla Motor, Dhaka, Bangladesh
+						</div>
+						<div className='pb-1'>
+							Development of membership & event management system by using
+							React, React Query, TypeScript, Storybook, Zustand, Tailwind CSS,
+							ASP.NET MVC, C#, Microsoft SQL, Azure, Stripe, Git, npm, Jest
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Work on membership management system JustGo</li>
+							<li>Implementation of new Figma design for better UX</li>
+							<li>Third-party API integration</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Integrated Stripe</li>
+							<li>Designed custom reusable Calendar component</li>
+						</ul>
+					</div>
+					<div className='font-semibold w-2/12'>June, 2022 – May, 2023</div>
 				</div>
 			</div>
 		</div>
