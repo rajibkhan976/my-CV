@@ -34,9 +34,9 @@ const Carousel = () => {
 	};
 
 	return (
-		<>
+		<div className='w-full'>
 			<div
-				className='slideshow-container'
+				className='slideshow-container w-11/12'
 				onLoad={() => showSlides(slideIndex)}
 			>
 				{/* <!-- Full-width images with number and caption text --> */}
@@ -124,7 +124,7 @@ const Carousel = () => {
 					onClick={() => currentSlide(5)}
 				></span>
 			</div>
-		</>
+		</div>
 	);
 };
 
