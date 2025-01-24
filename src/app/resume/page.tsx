@@ -65,7 +65,7 @@ const Resume = () => {
 				</div>
 				<div className='text-black text-justify flex justify-between py-1'>
 					<div className='flex flex-col'>
-						<div className='font-semibold'>Master of Information Systems </div>
+						<div className='font-semibold'>Master of Information Systems</div>
 						<div className=''>
 							Linnaeus University, Växjö, Sweden (Completed 90 credits)
 						</div>
@@ -85,6 +85,112 @@ const Resume = () => {
 						<div className=''>University of Dhaka, Dhaka, Bangladesh</div>
 					</div>
 					<div className='font-semibold'>2013</div>
+				</div>
+			</div>
+			<div className='w-full px-8'>
+				<div className='text-black font-bold text-xl mb-2 uppercase border-b-2 border-gray-950'>
+					Training & Development
+				</div>
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col'>
+						<div className='font-semibold'>
+							Certificate IV in Cyber Security
+						</div>
+						<div className=''>North Metropolitan TAFE, Perth, WA</div>
+					</div>
+					<div className='font-semibold'>2026</div>
+				</div>
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col'>
+						<div className='font-semibold'>
+							Professional Diploma in Frontend Developmen
+						</div>
+						<div className=''>EC Utbildning, Växjö, Sweden</div>
+					</div>
+					<div className='font-semibold'>2020</div>
+				</div>
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col'>
+						<div className='font-semibold'>
+							Professional Diploma in Web Development
+						</div>
+						<div className=''>IDB-BISEW, Dhaka, Bangladesh</div>
+					</div>
+					<div className='font-semibold'>2016</div>
+				</div>
+			</div>
+			<div className='w-full px-8'>
+				<div className='text-black font-bold text-xl mb-2 uppercase border-b-2 border-gray-950'>
+					Employment history
+				</div>
+				<div className='text-black text-justify flex justify-between pb-1'>
+					<div className='flex flex-col'>
+						<div className='pb-1'>
+							<span className='font-semibold'>Admin Assistant;&nbsp;</span>
+							Australian Islamic College, Henley Brook, Perth, WA 6055
+						</div>
+						<div className='pb-1'>
+							Provide administrative assistance to the AIC henley brook branch
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Helping parents with IT stuff</li>
+							<li>
+								Maintaing & handling students records across multiple systems
+							</li>
+							<li>Supporting academic staff with IT tools</li>
+						</ul>
+					</div>
+					<div className='font-semibold'>January, 2025 - Current</div>
+				</div>
+				<div className='text-black text-justify flex justify-between pb-1'>
+					<div className='flex flex-col pb-1'>
+						<div className=' pb-1'>
+							<span className='font-semibold'>
+								Parcel Post Officer (Christmas Casual);&nbsp;
+							</span>
+							Australia Post, Perth, WA
+						</div>
+						<div className='pb-1'>
+							This role was created to handle a large volume of parcels during
+							the Christmas period.
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Parcel processing & sorting</li>
+						</ul>
+					</div>
+					<div className='font-semibold'>October, 2024 - January, 2025</div>
+				</div>
+
+				<div className='text-black text-justify flex justify-between py-1'>
+					<div className='flex flex-col'>
+						<div className='pb-1'>
+							<span className='font-semibold'>
+								{" "}
+								Software Developer (Work From Home/Remote);&nbsp;
+							</span>
+							Tier5 Technology Solutions Pvt Ltd, Calcutta, India
+						</div>
+						<div className='pb-1'>
+							Development of software for the employer using React, TypeScript,
+							Node.js, JavaScript, HTML5, CSS3, SCSS, MongoDB, Git, AWS
+						</div>
+						<div className='font-semibold pb-1'>Key responsibilities:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>
+								Work on an organic marketing platform Friender and Gym
+								management software
+							</li>
+							<li>Development of web portal</li>
+							<li>API integration & performance optimization</li>
+						</ul>
+						<div className='font-semibold pb-1'>Key achievements:</div>
+						<ul className='list-disc list-inside m-2 text-black pb-1'>
+							<li>Behind-the-Scenes Wonder Award - Januar, 2024</li>
+						</ul>
+					</div>
+					<div className='font-semibold'>July, 2023 - July, 2024</div>
 				</div>
 			</div>
 		</div>
