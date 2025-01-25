@@ -4,8 +4,8 @@ const About = () => {
 	return (
 		<div className='f-full text-black p-4 flex flex-col'>
 			<div className='text-black font-semibold text-2xl my-4'>About me</div>
-			<div className='w-full flex'>
-				<div className='w-5/12'>
+			<div className='w-full flex md:flex-row flex-col'>
+				<div className='md:w-5/12 w-full'>
 					<div className='text-black font-semibold text-lg'>
 						Communication Skills
 					</div>
@@ -42,7 +42,7 @@ const About = () => {
 						<li>Staying organized in fast-paced development environments.</li>
 					</ul>
 				</div>
-				<div className='w-5/12'>
+				<div className='md:w-5/12 w-full'>
 					<div className='text-black font-semibold text-lg'>
 						Adaptability and Learning Agility
 					</div>

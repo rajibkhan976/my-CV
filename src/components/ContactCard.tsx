@@ -3,7 +3,7 @@
 const ContactCard = () => {
 	return (
 		<div className='text-black p-4 w-full h-screen flex justify-center items-center'>
-			<div className='w-6/12 flex flex-col bg-white shadow-xl px-6 py-8 rounded-md'>
+			<div className='md:w-6/12 w-full flex flex-col bg-white shadow-xl px-6 py-8 rounded-md'>
 				<div className='font-semibold text-xl text-center mb-2'>Contact me</div>
 				<div className='flex justify-between mt-2 mb-4'>
 					<label
