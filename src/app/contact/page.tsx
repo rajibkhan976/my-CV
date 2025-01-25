@@ -1,7 +1,7 @@
-import ContactCard from "@/components/ContactCard";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
-	return <ContactCard />;
+	return <ContactForm />;
 };
 
 export default Contact;
