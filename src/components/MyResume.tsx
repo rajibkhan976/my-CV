@@ -17,15 +17,18 @@ const MyResume = () => {
 							fill='currentColor'
 							className='size-6 text-black cursor-pointer ms-2'
 							onClick={async () => {
-								const response = await fetch("/api/save-pdf", {
-									method: "POST", // Method put is to create
-									headers: {
-										"Content-Type": "application/json",
-									},
-									body: JSON.stringify({
-										url: "http://localhost:3000/resume",
-									}),
-								});
+								const response = await fetch(
+									window.location.origin + "/api/save-pdf",
+									{
+										method: "POST", // Method put is to create
+										headers: {
+											"Content-Type": "application/json",
+										},
+										body: JSON.stringify({
+											url: "http://localhost:3000/resume",
+										}),
+									}
+								);
 								const fileBlob = await response.blob();
 
 								// this works and prompts for download
