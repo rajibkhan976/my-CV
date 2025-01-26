@@ -14,18 +14,16 @@ const MyResume = () => {
 			}),
 		});
 
-		const data = await response.json();
-
-		if (data?.error) {
-			window.print();
-			return null;
-		}
-
 		const fileBlob = await response.blob();
-		var link = document.createElement("a");
-		link.href = window.URL.createObjectURL(fileBlob);
-		link.click();
-		link.remove();
+
+		if (fileBlob?.type === "application/pdf") {
+			var link = document.createElement("a");
+			link.href = window.URL.createObjectURL(fileBlob);
+			link.click();
+			link.remove();
+		} else {
+			window.print();
+		}
 	};
 
 	return (
