@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import puppeteer from "puppeteer";
 
-export const saveAsPdf = async (url: string) => {
+const saveAsPdf = async (url: string) => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 
