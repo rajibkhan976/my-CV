@@ -13,7 +13,7 @@ const MyResume = () => {
 				url: window.location.origin + "/resume",
 			}),
 		});
-
+		console.log(response);
 		if (response) {
 			const fileBlob = await response.blob();
 			var link = document.createElement("a");
