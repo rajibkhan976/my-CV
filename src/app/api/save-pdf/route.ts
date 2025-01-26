@@ -1,14 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-// import puppeteer from "puppeteer";
+import puppeteer from "puppeteer";
 
 const saveAsPdf = async (url: string) => {
-	const browser = await puppeteer.launch({
-		args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
-		defaultViewport: chromium.defaultViewport,
-		executablePath: await chromium.executablePath(),
-		headless: chromium.headless,
-		ignoreHTTPSErrors: true,
-	});
+	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 
 	await page.goto(url, {
@@ -25,44 +19,6 @@ const saveAsPdf = async (url: string) => {
 	return result;
 };
 
-// export async function POST(req: NextRequest) {
-// 	const data = await req.json();
-// 	const { url } = data;
-
-// 	const pdf = await saveAsPdf(url as string);
-// 	const headers = new Headers();
-
-// 	headers.append("Content-Disposition", "attachment;");
-// 	headers.append("Content-Type", "application/pdf");
-
-// 	const options = { status: 200, statusText: "Pdf generated :)" };
-
-// 	if (!pdf) {
-// 		return NextResponse.json(
-// 			{ error: "Internal Server Error" },
-// 			{ status: 500 }
-// 		);
-// 	}
-
-// 	return new Response(pdf, {
-// 		headers,
-// 		...options,
-// 	});
-// }
-
-const chromium = require("@sparticuz/chromium-min");
-const puppeteer = require("puppeteer-core");
-
-async function getBrowser() {
-	return puppeteer.launch({
-		args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
-		defaultViewport: chromium.defaultViewport,
-		executablePath: await chromium.executablePath(),
-		headless: chromium.headless,
-		ignoreHTTPSErrors: true,
-	});
-}
-
 export async function POST(request: NextRequest) {
 	try {
 		const data = await request.json();
@@ -78,7 +34,7 @@ export async function POST(request: NextRequest) {
 		});
 	} catch (error) {
 		console.error("Error generating PDF:", error);
-		return new Response(JSON.stringify({ error: "Failed to generate PDF" }), {
+		return NextResponse.json(null, {
 			status: 500,
 			headers: { "Content-Type": "application/json" },
 		});

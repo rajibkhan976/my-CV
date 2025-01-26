@@ -3,6 +3,28 @@
 import { Tooltip } from "@/components/ui/tooltip";
 
 const MyResume = () => {
+	const saveAsPdf = async (): Promise<any> => {
+		const response = await fetch(window.location.origin + "/api/save-pdf", {
+			method: "POST", // Method put is to create
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				url: window.location.origin + "/resume",
+			}),
+		});
+
+		if (response) {
+			const fileBlob = await response.blob();
+			var link = document.createElement("a");
+			link.href = window.URL.createObjectURL(fileBlob);
+			link.click();
+			link.remove();
+		} else {
+			window.print();
+		}
+	};
+
 	return (
 		<div className='w-full h-full'>
 			<div className='flex justify-end w-full'></div>
@@ -16,27 +38,7 @@ const MyResume = () => {
 							viewBox='0 0 24 24'
 							fill='currentColor'
 							className='size-6 text-black cursor-pointer ms-2'
-							onClick={async () => {
-								const response = await fetch(
-									window.location.origin + "/api/save-pdf",
-									{
-										method: "POST", // Method put is to create
-										headers: {
-											"Content-Type": "application/json",
-										},
-										body: JSON.stringify({
-											url: "http://localhost:3000/resume",
-										}),
-									}
-								);
-								const fileBlob = await response.blob();
-
-								// this works and prompts for download
-								var link = document.createElement("a"); // once we have the file buffer BLOB from the post request we simply need to send a GET request to retrieve the file data
-								link.href = window.URL.createObjectURL(fileBlob);
-								link.click();
-								link.remove();
-							}}
+							onClick={saveAsPdf}
 						>
 							<path
 								fillRule='evenodd'
