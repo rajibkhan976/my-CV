@@ -5,7 +5,7 @@ import { Tooltip } from "@/components/ui/tooltip";
 const MyResume = () => {
 	const saveAsPdf = async (): Promise<any> => {
 		const response = await fetch(window.location.origin + "/api/save-pdf", {
-			method: "POST", // Method put is to create
+			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 			},

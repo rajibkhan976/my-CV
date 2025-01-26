@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Toaster, toaster } from "@/components/ui/toaster";
-import { sendMail } from "@/service/send-mail";
 
 const ContactForm = () => {
 	const [subject, setSubject] = useState<{ value: string; error: boolean }>({
@@ -41,12 +40,21 @@ const ContactForm = () => {
 
 	const handleSendMail = async () => {
 		if (subject?.value.trim() && email?.value.trim() && message?.value.trim()) {
-			const response = await sendMail({
-				sendTo: email?.value,
-				subject: subject?.value,
-				message: message?.value,
+			const response = await fetch(window.location.origin + "/api/send-mail", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					sendTo: email?.value,
+					subject: subject?.value,
+					message: message?.value,
+				}),
 			});
-			if (response?.messageId) {
+
+			const data = await response.json();
+
+			if (data?.info?.messageId) {
 				toaster.create({
 					title: `Email sent :)`,
 					type: "success",
