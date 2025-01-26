@@ -13,16 +13,19 @@ const MyResume = () => {
 				url: window.location.origin + "/resume",
 			}),
 		});
-		alert(response);
-		if (response) {
-			const fileBlob = await response.blob();
-			var link = document.createElement("a");
-			link.href = window.URL.createObjectURL(fileBlob);
-			link.click();
-			link.remove();
-		} else {
+
+		const data = await response.json();
+
+		if (data?.error) {
 			window.print();
+			return null;
 		}
+
+		const fileBlob = await response.blob();
+		var link = document.createElement("a");
+		link.href = window.URL.createObjectURL(fileBlob);
+		link.click();
+		link.remove();
 	};
 
 	return (

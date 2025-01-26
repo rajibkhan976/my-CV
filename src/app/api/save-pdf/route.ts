@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import puppeteer from "puppeteer";
 
 const saveAsPdf = async (url: string) => {
@@ -34,9 +34,12 @@ export async function POST(request: NextRequest) {
 		});
 	} catch (error) {
 		console.error("Error generating PDF:", error);
-		return new Response(null, {
-			status: 500,
-			headers: { "Content-Type": "application/json" },
-		});
+		return NextResponse.json(
+			{ error: "Failed to generate PDF" },
+			{
+				status: 500,
+				headers: { "Content-Type": "application/json" },
+			}
+		);
 	}
 }
