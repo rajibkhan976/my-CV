@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Provider } from "@/components/ui/provider";
 import Navbar from "@/components/Navbar";
+import TimeCard from "@/components/TimeCard";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -34,6 +35,10 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Provider>
+					<div className='flex justify-between p-4'>
+						<div className='flex'></div>
+						<TimeCard />
+					</div>
 					<Navbar />
 					{children}
 				</Provider>
