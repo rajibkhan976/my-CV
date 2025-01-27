@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { Tooltip } from "@/components/ui/tooltip";
+import { IoMdClock } from "react-icons/io";
 
 const TimeCard = (props: { customClass?: string }) => {
 	const { customClass } = props;
@@ -47,22 +48,9 @@ const TimeCard = (props: { customClass?: string }) => {
 		<div
 			className={`${customClass} text-lg font-medium flex flex-col bg-emerald-600 text-white rounded-md p-1 shadow-2xl`}
 		>
-			<div className='text-center flex justify-center p-1'>
+			<div className='text-center flex justify-center items-center p-1'>
 				<Tooltip content='Local time'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						fill='none'
-						viewBox='0 0 24 24'
-						strokeWidth={1.5}
-						stroke='currentColor'
-						className='size-6'
-					>
-						<path
-							strokeLinecap='round'
-							strokeLinejoin='round'
-							d='M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
-						/>
-					</svg>
+					<IoMdClock className='text-3xl' />
 				</Tooltip>
 				&nbsp;
 				{currentTime}
