@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Toaster, toaster } from "@/components/ui/toaster";
+import { Tooltip } from "@/components/ui/tooltip";
+import CustomDialog from "./VideoDialog";
 
 const ContactForm = () => {
 	const [subject, setSubject] = useState<{ value: string; error: boolean }>({
@@ -9,7 +11,7 @@ const ContactForm = () => {
 		error: false,
 	});
 	const [email, setEmail] = useState<{ value: string; error: boolean }>({
-		value: "",
+		value: "rajibkhan976@gmail.com",
 		error: false,
 	});
 	const [message, setMessage] = useState<{ value: string; error: boolean }>({
@@ -90,7 +92,16 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className='text-black p-4 w-full h-screen flex justify-center items-center'>
+		<div className='text-black p-4 w-full h-screen flex justify-center items-center flex-col'>
+			<div className='text-black font-medium text-lg text-center mb-2'>
+				Please click the button to watch a demo
+			</div>
+			<div className='flex justify-center mb-2'>
+				<CustomDialog
+					heading={"Sending main using Node.js"}
+					url={"https://www.youtube.com/embed/WGAdTis8Tps?si=t6nfQWXyCcSKYpgk"}
+				/>
+			</div>
 			<div className='md:w-6/12 w-full flex flex-col bg-white shadow-2xl px-6 py-8 rounded-md'>
 				<div className='font-semibold text-xl text-center mb-2'>Contact me</div>
 				<div className='flex justify-between mt-2 mb-4'>
@@ -118,12 +129,14 @@ const ContactForm = () => {
 					</div>
 				</div>
 				<div className='flex justify-between mb-4'>
-					<label
-						className='me-4'
-						htmlFor='email'
-					>
-						Email:
-					</label>
+					<Tooltip content='This is read only as email can only be sent to this id for test purpose'>
+						<label
+							className='me-4'
+							htmlFor='email'
+						>
+							Email:
+						</label>
+					</Tooltip>
 
 					<div className='flex flex-col w-9/12'>
 						<input
@@ -135,6 +148,7 @@ const ContactForm = () => {
 							value={email?.value}
 							onChange={handleOnChange}
 							required
+							readOnly
 						/>
 						{email?.error ? (
 							<div className='text-red-600 mt-2'>Please enter a email</div>
