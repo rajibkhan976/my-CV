@@ -21,7 +21,7 @@ const CustomCarousel = () => {
 	};
 
 	return (
-		<div className='w-full h-screen flex justify-center'>
+		<div className='w-full h-[500px] flex justify-center'>
 			<Carousel
 				className='md:w-7/12 w-11/12'
 				activeIndex={index}
