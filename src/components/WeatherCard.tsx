@@ -9,6 +9,7 @@ import { TbUvIndex } from "react-icons/tb";
 import { TbTemperaturePlus } from "react-icons/tb";
 import { TbTemperatureMinus } from "react-icons/tb";
 import { FcCalendar } from "react-icons/fc";
+import { Alert } from "@chakra-ui/react";
 
 const WeatherCard = (props: { customClass?: string }) => {
 	const { customClass } = props;
@@ -101,43 +102,56 @@ const WeatherCard = (props: { customClass?: string }) => {
 				</Tooltip>
 			</div>
 			<div className='flex text-emerald-600 font-medium flex-wrap p-2'>
-				{weatherData?.map((element: any, index: number) => {
-					return (
-						<div
-							key={index}
-							className='flex p-2 flex-col font-semibold bg-white flex-grow m-1 rounded-md'
-						>
-							<div className='p-1 rounded-sm flex justify-center'>
-								<FcCalendar className='text-lg me-1' />
-								{formatDate(element?.date)}
-							</div>
-							<div className='flex justify-between'>
-								<div className='p-1 flex flex-grow'>
-									<WiSunrise className='text-lg me-1' />
-									Sunrise: {formatTime(element?.sunrise)}
+				{weatherData ? (
+					weatherData?.map((element: any, index: number) => {
+						return (
+							<div
+								key={index}
+								className='flex p-2 flex-col font-semibold bg-white flex-grow m-1 rounded-md'
+							>
+								<div className='p-1 rounded-sm flex justify-center items-center'>
+									<FcCalendar className='text-lg me-1' />
+									{formatDate(element?.date)}
 								</div>
-								<div className='p-1 flex-grow flex justify-end'>
-									<TbSunset2 className='text-lg me-1' />
-									Sunset: {formatTime(element?.sunset)}
+								<div className='flex justify-between'>
+									<div className='p-1 flex flex-grow'>
+										<WiSunrise className='text-lg me-1' />
+										Sunrise: {formatTime(element?.sunrise)}
+									</div>
+									<div className='p-1 flex-grow flex justify-end'>
+										<TbSunset2 className='text-lg me-1' />
+										Sunset: {formatTime(element?.sunset)}
+									</div>
+								</div>
+								<div className='flex justify-between'>
+									<div className='p-1 flex'>
+										<TbTemperaturePlus className='text-lg me-1' />
+										Max temp: {element?.max_temp} &#176; C
+									</div>
+									<div className='p-1 flex'>
+										<TbTemperatureMinus className='text-lg me-1' />
+										Min temp: {element?.min_temp} &#176; C
+									</div>
+								</div>
+								<div className='flex justify-center p-1'>
+									<TbUvIndex className='text-lg me-1' />
+									UV Index: {element?.uv_index}
 								</div>
 							</div>
-							<div className='flex justify-between'>
-								<div className='p-1 flex'>
-									<TbTemperaturePlus className='text-lg me-1' />
-									Max temp: {element?.max_temp} &#176; C
-								</div>
-								<div className='p-1 flex'>
-									<TbTemperatureMinus className='text-lg me-1' />
-									Min temp: {element?.min_temp} &#176; C
-								</div>
-							</div>
-							<div className='flex justify-center p-1'>
-								<TbUvIndex className='text-lg me-1' />
-								UV Index: {element?.uv_index}
-							</div>
-						</div>
-					);
-				})}
+						);
+					})
+				) : (
+					<Alert.Root
+						status='info'
+						title='This is the alert title'
+					>
+						<Alert.Indicator />
+						<Alert.Title>
+							Please refresh the page and allow access to your location to get
+							the weather data based on your current location
+						</Alert.Title>
+					</Alert.Root>
+				)}
 			</div>
 		</div>
 	);
