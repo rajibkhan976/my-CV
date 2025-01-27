@@ -28,18 +28,18 @@ const MyResume = () => {
 
 	return (
 		<div className='w-full h-full'>
-			<div className='flex justify-end w-full'></div>
-
-			<div className='w-full h-36 text-center p-4 mb-2'>
-				<div className='text-black font-bold text-xl mb-2 flex justify-center'>
-					Resume&nbsp;
-					<Tooltip content='Download resume as PDF'>
+			<div className='flex justify-end w-full'>
+				<Tooltip content='Download resume as PDF'>
+					<button
+						type='button'
+						className='bg-emerald-600 text-white font-semibold cursor-pointer rounded-md p-2 me-4 mt-4'
+						onClick={saveAsPdf}
+					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
 							fill='currentColor'
-							className='size-6 text-black cursor-pointer ms-2'
-							onClick={saveAsPdf}
+							className='size-6'
 						>
 							<path
 								fillRule='evenodd'
@@ -47,12 +47,17 @@ const MyResume = () => {
 								clipRule='evenodd'
 							/>
 						</svg>
-					</Tooltip>
+					</button>
+				</Tooltip>
+			</div>
+			<div className='w-full h-36 p-4 mb-2'>
+				<div className='text-black font-bold text-xl mb-2 flex justify-center'>
+					Resume&nbsp;
 				</div>
-				<h1 className='text-black font-bold text-2xl mb-2'>
+				<h1 className='text-black font-bold text-2xl mb-2 text-center'>
 					Rajib Hossain Khan
 				</h1>
-				<div className='w-full text-black text-md'>
+				<div className='w-full text-black text-md text-center'>
 					<span className='px-2'>Email: rajibkhan976@gmail.com</span>
 					<span className='px-2'>|</span>
 					<span className='px-2'>Mobile: +61480417262</span>

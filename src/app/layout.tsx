@@ -5,7 +5,7 @@ import "./globals.css";
 import { Provider } from "@/components/ui/provider";
 import Navbar from "@/components/Navbar";
 import TimeCard from "@/components/TimeCard";
-import WeatherCard from "@/components/WeatherCard";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -36,12 +36,15 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Provider>
-					<div className='flex justify-between p-4'>
-						<WeatherCard />
+					<div className='flex md:flex-row flex-col justify-between p-4'>
+						<div className='text-white bg-emerald-600 rounded-md shadow-2xl p-2 font-semibold text-4xl flex items-center italic -skew-x-6 md:mb-0 mb-4'>
+							WebResume
+						</div>
 						<TimeCard />
 					</div>
 					<Navbar />
 					{children}
+					<Footer />
 				</Provider>
 			</body>
 		</html>

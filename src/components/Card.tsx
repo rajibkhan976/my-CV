@@ -3,9 +3,7 @@ import { Image } from "@chakra-ui/react";
 const Card = (props: { customClass?: string }) => {
 	const { customClass } = props;
 	return (
-		<div
-			className={`${customClass} + md:w-4/12 w-full ring-1 ring-gray-400 rounded-sm mt-4 sm:flex-col sm:justify-start`}
-		>
+		<div className={`${customClass} ring-1 ring-gray-400 rounded-sm`}>
 			<Image
 				className='h-[350px] w-full rounded-sm'
 				src='/Resume-Home.jpeg'

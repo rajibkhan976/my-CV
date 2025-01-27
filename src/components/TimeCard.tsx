@@ -45,9 +45,9 @@ const TimeCard = (props: { customClass?: string }) => {
 
 	return (
 		<div
-			className={`${customClass} text-gray-700 text-lg font-semibold flex flex-col`}
+			className={`${customClass} text-lg font-medium flex flex-col bg-emerald-600 text-white rounded-md p-1 shadow-2xl`}
 		>
-			<div className='text-center flex justify-center'>
+			<div className='text-center flex justify-center p-1'>
 				<Tooltip content='Local time'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
@@ -67,7 +67,7 @@ const TimeCard = (props: { customClass?: string }) => {
 				&nbsp;
 				{currentTime}
 			</div>
-			<div className='flex justify-around'>
+			<div className='flex justify-around p-1 rounded-sm'>
 				<Tooltip content='Calendar'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'

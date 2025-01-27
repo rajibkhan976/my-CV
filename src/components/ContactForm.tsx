@@ -91,7 +91,7 @@ const ContactForm = () => {
 
 	return (
 		<div className='text-black p-4 w-full h-screen flex justify-center items-center'>
-			<div className='md:w-6/12 w-full flex flex-col bg-white shadow-xl px-6 py-8 rounded-md'>
+			<div className='md:w-6/12 w-full flex flex-col bg-white shadow-2xl px-6 py-8 rounded-md'>
 				<div className='font-semibold text-xl text-center mb-2'>Contact me</div>
 				<div className='flex justify-between mt-2 mb-4'>
 					<label
@@ -167,7 +167,7 @@ const ContactForm = () => {
 				</div>
 				<div className='w-full flex justify-end mb-2'>
 					<button
-						className='bg-green-700 text-white rounded-md px-4 py-2'
+						className='bg-emerald-600 text-white rounded-md px-4 py-2 font-semibold'
 						type='button'
 						onClick={handleSendMail}
 					>
