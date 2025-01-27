@@ -23,7 +23,7 @@ const CustomCarousel = () => {
 	return (
 		<div className='w-full h-screen flex justify-center'>
 			<Carousel
-				className='w-7/12'
+				className='md:w-7/12 w-11/12'
 				activeIndex={index}
 				onSelect={handleSelect}
 				prevIcon={<FcPrevious className='text-3xl' />}
