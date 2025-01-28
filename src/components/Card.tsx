@@ -15,7 +15,7 @@ const Card = (props: { customClass?: string }) => {
 					Rajib Hossain Khan
 				</div>
 				<div className='text-gray-700 px-1 mt-1 text-justify font-medium'>
-					I have developped this application to demonstrate that I possess the
+					I have developed this application to demonstrate that I possess the
 					skills, which I have mentioned in my CV. I have moved to Australia and
 					struggling to get an opportunity as a software developer. I assume
 					that employers are not sure about my skillset as I don't have any
