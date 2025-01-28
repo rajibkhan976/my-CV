@@ -8,7 +8,7 @@ const Footer = () => {
 
 	return (
 		<div className='bg-black w-full h-16 flex md:flex-row flex-col items-center'>
-			<div className='flex text-white font-semibold md:w-5/12 w-full md:my-0 my-2'>
+			<div className='flex items-center text-white font-semibold md:w-5/12 w-full md:my-0 my-2'>
 				{/* <RiCopyrightFill className='ms-4 text-2xl' /> */}
 				&copy;
 				<span className='text-sm align-middle'>
