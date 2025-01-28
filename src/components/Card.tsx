@@ -20,7 +20,7 @@ const Card = (props: { customClass?: string }) => {
 					struggling to get an opportunity as a software developer. I assume
 					that employers are not sure about my skillset as I don't have any
 					local experience or degree. Therefore, the idea of developing a web
-					based resume came into my mind. I have used JavaScript, TypeSctipt,
+					based resume came into my mind. I have used JavaScript, TypeScript,
 					Tailwind CSS, Node.js, Next.js and/or React to develop this app. This
 					app behaves responsively in mobile devices My resume can also be
 					downloaded and/or printed through this app. It is also possible to
