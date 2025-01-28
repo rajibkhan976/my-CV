@@ -14,7 +14,7 @@ const Footer = () => {
 					&nbsp;{date.getFullYear()} All rights reserved to Rajib Hossain Khan
 				</span>
 			</div>
-			<div className='flex text-2xl md:w-5/12 w-full md:ms-0 ms-8 md:my-0 my-2'>
+			<div className='flex text-2xl md:w-5/12 w-full md:ms-0 ms-11 md:my-0 my-2'>
 				<Link
 					href={`https://github.com/rajibkhan976`}
 					target='_blank'

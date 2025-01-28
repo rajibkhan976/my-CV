@@ -21,6 +21,7 @@ function CustomDialog(props: { heading: string; url: string }) {
 			</Button>
 
 			<Modal
+				size='lg'
 				show={show}
 				onHide={handleClose}
 			>

@@ -96,7 +96,7 @@ const ContactForm = () => {
 			<div className='text-black font-medium text-lg text-center mb-2'>
 				Please click the button to watch a demo
 			</div>
-			<div className='flex justify-center mb-2'>
+			<div className='flex justify-center mb-4'>
 				<CustomDialog
 					heading={"Sending mail using Node.js"}
 					url={"https://www.youtube.com/embed/WGAdTis8Tps?si=t6nfQWXyCcSKYpgk"}
