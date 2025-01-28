@@ -1,4 +1,4 @@
-import { FaCopyright } from "react-icons/fa";
+import { RiCopyrightFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -9,7 +9,7 @@ const Footer = () => {
 	return (
 		<div className='bg-black w-full h-16 flex md:flex-row flex-col items-center'>
 			<div className='flex text-white font-semibold md:w-5/12 w-full md:my-0 my-2'>
-				<FaCopyright className='ms-4 text-2xl' />
+				<RiCopyrightFill className='ms-4 text-2xl' />
 				<span className='text-sm align-middle'>
 					&nbsp;{date.getFullYear()} All rights reserved to Rajib Hossain Khan
 				</span>
