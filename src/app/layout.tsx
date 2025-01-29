@@ -34,7 +34,7 @@ export default function RootLayout({
 			suppressHydrationWarning
 		>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Provider>
 					<div className='flex md:flex-row flex-col justify-between p-4'>
