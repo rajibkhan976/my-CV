@@ -35,7 +35,7 @@ const resume = {
 	],
 	training_development: [
 		{
-			degree: "Certificate IV in Cyber Security",
+			degree: "Certificate IV in Cyber Security (Part time)",
 			institution: "North Metropolitan TAFE, Perth, WA",
 			year: "2026",
 		},
