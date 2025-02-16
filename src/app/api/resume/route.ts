@@ -101,7 +101,7 @@ const resume = {
 		{
 			designation: "Frontend Developer",
 			employer: "JustGo Technologies Ltd, Bangla Motor, Dhaka, Bangladesh",
-			duration: "February 2024",
+			duration: "June, 2023 - May, 2024",
 			role: "Development of membership & event management system by using React, React Query, TypeScript, Storybook, Zustand, Tailwind CSS, ASP.NET MVC, C#, Microsoft SQL, Azure, Stripe, Git, npm, Jest",
 			responsibilities: [
 				"Work on membership management system JustGo",
