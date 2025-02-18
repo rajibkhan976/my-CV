@@ -35,8 +35,13 @@ const resume = {
 	],
 	training_development: [
 		{
-			degree: "Certificate IV in Cyber Security (Part time)",
+			degree: "Cloud Engineering for Intermediate Roles Skill Set",
 			institution: "North Metropolitan TAFE, Perth, WA",
+			year: "2025",
+		},
+		{
+			degree: "Certificate IV in Cyber Security (Part time)",
+			institution: "North Metropolitan TAFE, Joondalup, WA",
 			year: "2026",
 		},
 		{
