@@ -77,14 +77,14 @@ const MyResume = () => {
 							Career objective
 						</div>
 						<div className='text-black text-justify'>
-							I am an aspiring software developer with a strong foundation in
-							programming, problem-solving, and system design, seeking a dynamic
-							role in a forward-thinking organization. Passionate about
-							leveraging technical expertise in front-end and/or full-stack
-							development to build innovative and scalable solutions. Committed
-							to continuous learning, collaboration, and contributing to the
-							success of cutting-edge projects while enhancing organizational
-							goals.
+							I am an aspiring person with a strong foundation in programming,
+							problem-solving, and system development, design, maintenance and
+							support; seeking a dynamic role in a forward-thinking
+							organization. Passionate about leveraging technical expertise in
+							IT and software development and support; to build innovative and
+							scalable solutions. Committed to continuous learning,
+							collaboration, and contributing to the success of cutting-edge
+							projects while enhancing organizational goals.
 						</div>
 					</div>
 					<div className='w-full px-8 mt-4'>
