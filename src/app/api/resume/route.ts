@@ -72,7 +72,7 @@ const resume = {
 		{
 			designation: "Admin Assistant",
 			employer: "Australian Islamic College, Henley Brook, Perth, WA 6055",
-			duration: "January, 2025 - Current",
+			duration: "28th January, 2025 - 14th February, 2025",
 			role: "Provide administrative assistance to the AIC henley brook branch",
 			responsibilities: [
 				"Helping parents with IT stuff",
