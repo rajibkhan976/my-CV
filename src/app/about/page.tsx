@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<div className='f-full text-black p-4 flex flex-col'>
 			<div className='text-black font-semibold text-2xl my-4'>About me</div>
-			<div className='w-full flex md:flex-row flex-col'>
+			<div className='w-full flex flex-col'>
 				<div className='text-black font-semibold text-lg'>
 					Communication Skills
 				</div>
