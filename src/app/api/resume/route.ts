@@ -57,6 +57,19 @@ const resume = {
 	],
 	employment_history: [
 		{
+			designation: "Data Entry Operator",
+			employer:
+				"PERSOLKELLY, WAEC - Central Vote Processing, 30 Beaufort Street, 6000",
+			duration: "5th March, 2025 - 15th March, 2025",
+			role: null,
+			responsibilities: [
+				"Declaration processing for WAEC during the state election 2025",
+				"Legislative assembly & legislative council ballot counting",
+				"Data entry operations in EMSWA Vote processing software",
+			],
+			achievements: null,
+		},
+		{
 			designation: "Admin Assistant",
 			employer: "Australian Islamic College, Henley Brook, Perth, WA 6055",
 			duration: "January, 2025 - Current",
