@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const resume = {
 	name: "Rajib Hossain Khan",
 	email: "rajibkhan976@gmail.com",
-	mobile: "+61480417262",
+	mobile: "0480417262",
 	address: "23 Bullara Road, Craigie, WA 6025",
 	skills: {
 		frontend:

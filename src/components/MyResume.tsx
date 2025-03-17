@@ -65,9 +65,9 @@ const MyResume = () => {
 							{resumeData?.resume?.name}
 						</h1>
 						<div className='w-full text-black text-md text-center'>
-							<span className='px-2'>Email: {resumeData?.resume?.email}</span>
+							<span className='px-2'>{resumeData?.resume?.email}</span>
 							<span className='px-2'>|</span>
-							<span className='px-2'>Mobile: {resumeData?.resume?.mobile}</span>
+							<span className='px-2'>{resumeData?.resume?.mobile}</span>
 							<span className='px-2'>|</span>
 							<span className='px-2'>{resumeData?.resume?.address}</span>
 						</div>
