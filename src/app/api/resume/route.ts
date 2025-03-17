@@ -4,7 +4,7 @@ const resume = {
 	name: "Rajib Hossain Khan",
 	email: "rajibkhan976@gmail.com",
 	mobile: "0480417262",
-	address: "23 Bullara Road, Craigie, WA 6025",
+	address: "Craigie, WA 6025",
 	skills: {
 		frontend:
 			"JavaScript (ES6+), React, Redux, Next.js, TypeScript, Angular, Vue.js, HTML5, CSS3, Tailwind CSS, Bootstrap, SCSS, GSAP",
