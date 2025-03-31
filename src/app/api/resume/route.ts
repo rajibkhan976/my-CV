@@ -57,15 +57,15 @@ const resume = {
 	],
 	employment_history: [
 		{
-			designation: "Software Developer  (Part Time Remote job) ",
+			designation: "Software Developer  (Part Time Remote job)",
 			employer:
 				"Alphabyte Inc., 3-1-36 Aoyama Marutake Building, 6th Floor, Minami Aoyama, Minato-ku, Tokyo 107-0062, Japan",
 			duration: "February 2025 - current",
-			role: "Development of product page by using Next.js, TypeScript, React Query, Node.js, NestJS, PostgreSQL, Git, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, OOP, Docker",
+			role: "Development of product & checkout API by using NestJS, PostgreSQL, Prisma & TypeScript and Stripe API integration using Node.js",
 			responsibilities: [
-				"Work on Retreat portal",
-				"Development of product page with purchase options for the attendees",
-				"Stripe API integration",
+				"Working on the Retreat portal",
+				"Development of product and checkout page for the clients with Next.js, TypeScript, React Query, HTML5, CSS3 & Tailwind CSS",
+				"Versioning control with Git and DevOps with Docker & Google Cloud",
 			],
 			achievements: [
 				"Completion of the product page development in a very short time that made the client super happy",
@@ -74,7 +74,7 @@ const resume = {
 		{
 			designation: "Data Entry Operator",
 			employer:
-				"PERSOLKELLY, WAEC - Central Vote Processing, 30 Beaufort Street, 6000",
+				"Western Australian Electoral Commission, Central Vote Processing, 30 Beaufort Street, 6000",
 			duration: "5th March, 2025 - 28th March, 2025",
 			role: null,
 			responsibilities: [
@@ -106,6 +106,19 @@ const resume = {
 		},
 		{
 			designation: "Software Developer (Work From Home/Remote)",
+			employer:
+				"MetaDesign Solutions, Plot 28-29, Electronic City, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana 122001, India",
+			duration: "August, 2023 - October, 2024",
+			role: "Development of frontend & mobile application by using JavaScript, TypeScript, React, React Native, Vue, HTML5, CSS3 & SCSS",
+			responsibilities: [
+				"Worked on the Nuclicore & OwnProp project",
+				"API development & integration with Node.js, Express, MySQL & MongoDB",
+				"Versionsing management with Git and DevOps with AWS & Docker",
+			],
+			achievements: null,
+		},
+		{
+			designation: "Software Developer (Work From Home/Remote)",
 			employer: "Tier5 Technology Solutions Pvt Ltd, Calcutta, India",
 			duration: "July, 2023 - July, 2024",
 			role: "Development of software for the employer using React, TypeScript, Node.js, JavaScript, HTML5, CSS3, SCSS, MongoDB, Git, AWS",
@@ -115,6 +128,20 @@ const resume = {
 				"API integration & performance optimization",
 			],
 			achievements: ["Behind-the-Scenes Wonder Award - January, 2024"],
+		},
+
+		{
+			designation: "Software Developer (Work From Home/Remote)",
+			employer:
+				"E. B. Solutions Limited, House 32 (7th Floor), Road 2, Dhanmondi, Dhaka 1205, Bangladesh",
+			duration: "June, 2023 - July, 2023",
+			role: "Development of frontend application by using Apps Script, JavaScript, TypeScript, Next.js, HTML5 & CSS3",
+			responsibilities: [
+				"Worked on a information/document authentication system",
+				"API development & integration with Node.js, Express, Python & PostgreSQL",
+				"Versionsing management with Git",
+			],
+			achievements: null,
 		},
 		{
 			designation: "Frontend Developer",
