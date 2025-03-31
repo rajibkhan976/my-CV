@@ -57,10 +57,25 @@ const resume = {
 	],
 	employment_history: [
 		{
+			designation: "Software Developer  (Part Time Remote job) ",
+			employer:
+				"Alphabyte Inc., 3-1-36 Aoyama Marutake Building, 6th Floor, Minami Aoyama, Minato-ku, Tokyo 107-0062, Japan",
+			duration: "February 2025 - current",
+			role: "Development of product page by using Next.js, TypeScript, React Query, Node.js, NestJS, PostgreSQL, Git, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, OOP, Docker",
+			responsibilities: [
+				"Work on Retreat portal",
+				"Development of product page with purchase options for the attendees",
+				"Stripe API integration",
+			],
+			achievements: [
+				"Completion of the product page development in a very short time that made the client super happy",
+			],
+		},
+		{
 			designation: "Data Entry Operator",
 			employer:
 				"PERSOLKELLY, WAEC - Central Vote Processing, 30 Beaufort Street, 6000",
-			duration: "5th March, 2025 - 15th March, 2025",
+			duration: "5th March, 2025 - 28th March, 2025",
 			role: null,
 			responsibilities: [
 				"Declaration processing for WAEC during the state election 2025",
@@ -100,21 +115,6 @@ const resume = {
 				"API integration & performance optimization",
 			],
 			achievements: ["Behind-the-Scenes Wonder Award - January, 2024"],
-		},
-		{
-			designation: "Software Developer (Freelance project)",
-			employer:
-				"Alphabyte Inc., 3-1-36 Aoyama Marutake Building, 6th Floor, Minami Aoyama, Minato-ku, Tokyo 107-0062, Japan",
-			duration: "February 2024",
-			role: "Development of product page by using Next.js, TypeScript, React Query, Node.js, NestJS, PostgreSQL, Git, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, OOP, Docker",
-			responsibilities: [
-				"Work on Retreat portal",
-				"Development of product page with purchase options for the attendees",
-				"Stripe API integration",
-			],
-			achievements: [
-				"Completion of the product page development in a very short time that made the client super happy",
-			],
 		},
 		{
 			designation: "Frontend Developer",
