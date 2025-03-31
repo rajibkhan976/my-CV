@@ -108,7 +108,7 @@ const resume = {
 			designation: "Software Developer (Work From Home/Remote)",
 			employer:
 				"MetaDesign Solutions, Plot 28-29, Electronic City, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana 122001, India",
-			duration: "August, 2023 - October, 2024",
+			duration: "August, 2024 - October, 2024",
 			role: "Development of frontend & mobile application by using JavaScript, TypeScript, React, React Native, Vue, HTML5, CSS3 & SCSS",
 			responsibilities: [
 				"Worked on the Nuclicore & OwnProp project",
